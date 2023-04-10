@@ -1,4 +1,4 @@
-*Written by Rupesh Mahore , IISc Bangalore*
+**Written by Rupesh Mahore , IISc Bangalore**
 # Locust Swarm Simulation
 This Python code simulates the behavior of a swarm of locusts using the agent-based model. The simulation is a two-dimensional grid in which the agents move according to the rules defined by the model.
 
