@@ -20,6 +20,8 @@ The following simulation parameters can be customized by changing the correspond
 * marching_threshold: Threshold for determining if a locust will march
 * band_threshold: Threshold for determining if a locust will form a band
 
+For each locust, a decision is made whether to march in a random direction or form a band and move towards the closest locust in their neighborhood, based on the **marching_threshold** and **band_threshold parameters**. If the locust decides to march, its orientation is set to a random direction within a certain range of its neighbors' average orientation. If the locust decides to form a band, its orientation is set to the orientation of the closest locust in its neighborhood. The locust's position is then updated by moving in the direction of its new orientation, with periodic boundary conditions enforced to keep the locusts within the simulation grid.
+
 # Running the Simulation
 To run the simulation, simply execute the Python code in your preferred environment or terminal. The resulting animation will be saved as a video file named **'locusts.mp4'** in the same directory as the code file.
 
